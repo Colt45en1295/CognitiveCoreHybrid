@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>CognitiveCore.App</RootNamespace>
+    <AssemblyName>CognitiveCore.App</AssemblyName>
+    <Platforms>AnyCPU</Platforms>
+    <EnableWindowsTargeting>true</EnableWindowsTargeting>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Data.Sqlite" Version="8.0.8" />
+    <PackageReference Include="Microsoft.Extensions.Http" Version="8.0.0" />
+    <PackageReference Include="Python.Runtime" Version="3.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Python\**\*.py" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+</Project>
