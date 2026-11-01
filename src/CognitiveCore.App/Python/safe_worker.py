@@ -58,7 +58,7 @@ def main():
         parsed = ast.parse(expression, mode="eval")
         result = _evaluate(parsed)
         sys.stdout.write(json.dumps({"success": True, "value": result}))
-    except Exception as exc:  # pragma: no cover - defensive
+    except Exception as exc:
         sys.stdout.write(json.dumps({"success": False, "error": str(exc)}))
 
 
