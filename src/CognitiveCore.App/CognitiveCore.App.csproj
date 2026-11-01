@@ -19,5 +19,6 @@
 
   <ItemGroup>
     <None Include="Python\**\*.py" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="PythonEngine\**\*.py" CopyToOutputDirectory="PreserveNewest" />
   </ItemGroup>
 </Project>
